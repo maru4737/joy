@@ -18,7 +18,7 @@ public class LoginDaoImpl extends SqlSessionDaoSupport implements LoginDao {
 
         System.out.println("<<LoginDaoImpl>>");
         System.out.println(usrVo.toString());
-        System.out.println((userVo) getSqlSession().selectOne("LoginDaoImpl.selectTestSample", usrVo));
+        System.out.println((String) getSqlSession().selectOne("LoginDaoImpl.selectTestSample", usrVo));
 
 
         return null;
