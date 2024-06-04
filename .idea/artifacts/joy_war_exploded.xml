@@ -14,12 +14,25 @@
           <element id="module-output" name="joy" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.11.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.11.RELEASE" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.3.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.2.11.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.11.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.11.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.11.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.11.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.11.RELEASE" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.4.5" />
+          <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
+          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.jdbc:ojdbc6:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.jdbc:ucp:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.security:oraclepki:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.security:osdt_cert:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.security:osdt_core:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.ha:simplefan:11.2.0.4" />
+          <element id="library" level="project" name="Maven: com.oracle.database.ha:ons:11.2.0.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.11.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.11.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.11.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.11.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.11.RELEASE" />
         </element>
