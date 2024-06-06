@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/Login")
@@ -31,17 +32,23 @@ public class LoginController {
         userVo usrVo = new userVo();
         usrVo.setId(request.getParameter("id"));
         usrVo.setPw(request.getParameter("pw"));
-        System.out.println("=====================================================");
-        System.out.println(usrVo.getId());
-        System.out.println(usrVo.getPw());
 
-        userVo userVo = new userVo();
+        String returnPage = "/main";
+        String resultMsg = "";
+        HttpSession session = request.getSession();
+        userVo loginRst = loginService.usrLogin(usrVo);
 
-        userVo = loginService.usrLogin(usrVo);
+        if(loginRst.getId()==usrVo.getId()){
+            model.addAttribute("userVo",loginRst);
+            session.setAttribute("user",loginRst);
+        }else{
+            resultMsg = "아이디 또는 비밀번호가 다릅니다.";
+            model.addAttribute("resultMsg",resultMsg);
+        }
 
-        model.addAttribute("userVo",userVo);
 
-        return "/main";
+
+        return returnPage;
     }
 
 }

@@ -11,6 +11,9 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>/WEB-INF/root-context.xml</param-value>
     </context-param>
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/views/main.jsp</welcome-file>
+    </welcome-file-list>
 
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>

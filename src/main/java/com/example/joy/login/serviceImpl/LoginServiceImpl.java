@@ -14,8 +14,7 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public userVo usrLogin(userVo usrVo) {
-        System.out.println("<<LoginServiceImpl>>");
-        System.out.println(usrVo.toString());
+
         return loginDao.usrLogin(usrVo);
     }
 }
